@@ -1,0 +1,27 @@
+package entidade;
+
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+public class Produto {
+	
+	int id;
+	String nome;
+	double valor;
+	
+	
+	private static Map<Integer,Produto>produtos;
+	
+	static{
+		produtos = new LinkedHashMap<Integer,Produto>();
+		produtos.put(1, new Produto(1,"Laptop",1000));
+	}
+	
+	
+	private Produto(int i, String n, double v){
+		this.id    = i;
+		this.nome  = n;
+		this.valor = v;
+	}
+
+}

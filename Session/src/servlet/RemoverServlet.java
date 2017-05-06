@@ -1,0 +1,49 @@
+package servlet;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import entity.Carrinho;
+import entity.Produto;
+
+ 
+@WebServlet("/Remover")
+public class RemoverServlet extends HttpServlet {
+	 
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		int id = Integer.parseInt(request.getParameter("id"));
+		Produto p = Produto.getProdutoById(id);
+		
+		
+		HttpSession session =  request.getSession();
+		
+				
+		Carrinho carrinho = (Carrinho)session.getAttribute("carrinho");
+		
+		if(carrinho == null){
+			carrinho = new Carrinho();
+			session.setAttribute("carrinho", carrinho);
+		}
+		
+		
+		 
+		int num = carrinho.getSize();
+		
+		System.out.println("Antes :"+ num);
+		
+		carrinho.remove(p);
+		
+		System.out.println("Depois: "+ num);
+		
+		request.getRequestDispatcher("/Carrinho").forward(request, response);
+		
+		 
+	}
+
+}

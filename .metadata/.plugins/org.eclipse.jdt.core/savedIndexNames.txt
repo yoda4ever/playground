@@ -1,0 +1,3 @@
+INDEX VERSION 1.129+C:\SoftBlue\SoftBlueProjects\.metadata\.plugins\org.eclipse.jdt.core
+1663931003.index
+3846048470.index

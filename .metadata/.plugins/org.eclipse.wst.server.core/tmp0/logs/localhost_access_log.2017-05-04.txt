@@ -1,0 +1,17 @@
+127.0.0.1 - - [04/May/2017:00:36:21 -0300] "GET / HTTP/1.1" 404 951
+127.0.0.1 - - [04/May/2017:00:36:24 -0300] "GET /meucarrinho/produto.jsp HTTP/1.1" 200 358
+127.0.0.1 - - [04/May/2017:00:37:33 -0300] "GET /meucarrinho/produto.jsp HTTP/1.1" 200 354
+127.0.0.1 - - [04/May/2017:00:40:44 -0300] "GET /meucarrinho/produto.jsp HTTP/1.1" 200 574
+127.0.0.1 - - [04/May/2017:00:41:28 -0300] "GET /meucarrinho/produto.jsp HTTP/1.1" 200 574
+127.0.0.1 - - [04/May/2017:00:46:55 -0300] "GET / HTTP/1.1" 404 951
+127.0.0.1 - - [04/May/2017:00:47:13 -0300] "GET /meucarrinho/Listar HTTP/1.1" 200 1960
+127.0.0.1 - - [04/May/2017:00:48:58 -0300] "GET /meucarrinho/Listar HTTP/1.1" 200 2331
+127.0.0.1 - - [04/May/2017:00:49:18 -0300] "GET /meucarrinho/Listar HTTP/1.1" 200 2331
+0:0:0:0:0:0:0:1 - - [04/May/2017:00:49:56 -0300] "GET /meucarrinho/Listar HTTP/1.1" 200 2331
+0:0:0:0:0:0:0:1 - - [04/May/2017:00:49:56 -0300] "GET /favicon.ico HTTP/1.1" 404 973
+0:0:0:0:0:0:0:1 - - [04/May/2017:00:50:01 -0300] "GET /meucarrinho/Adicionar?id= HTTP/1.1" 200 23
+127.0.0.1 - - [04/May/2017:00:50:58 -0300] "GET /meucarrinho/Listar HTTP/1.1" 200 2321
+0:0:0:0:0:0:0:1 - - [04/May/2017:00:51:05 -0300] "GET /meucarrinho/Listar HTTP/1.1" 200 2321
+0:0:0:0:0:0:0:1 - - [04/May/2017:00:52:00 -0300] "GET /meucarrinho/Listar HTTP/1.1" 200 2351
+0:0:0:0:0:0:0:1 - - [04/May/2017:00:52:42 -0300] "GET /meucarrinho/Listar HTTP/1.1" 200 2471
+0:0:0:0:0:0:0:1 - - [04/May/2017:00:52:59 -0300] "GET /meucarrinho/Listar HTTP/1.1" 200 2351

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servers>
+  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/Server#1-config" deployDir="wtpwebapps" hostname="localhost" id="Server#1" name="Server#1" runtime-id="Server#1" server-type="org.eclipse.jst.server.tomcat.70" server-type-id="org.eclipse.jst.server.tomcat.70" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="14">
+    <list key="modules" value0="CarrinhoDeCompras::org.eclipse.jst.jee.server:CarrinhoDeCompras::jst.web::3.0" value1="Mod06_ex02B::org.eclipse.jst.jee.server:Mod06_ex02B::jst.web::3.0"/>
+  </server>
+</servers>

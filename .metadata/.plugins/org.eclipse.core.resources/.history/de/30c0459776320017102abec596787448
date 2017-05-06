@@ -1,0 +1,46 @@
+package servlet;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+ 
+@WebServlet("/Cadastrar")
+public class CadastrarServlet extends HttpServlet {
+	 
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		String email 	=  request.getParameter("email");
+		String nome     =  request.getParameter("nome");
+		String telefone =  request.getParameter("telefone");
+		String pagina   = request.getParameter("pagina");
+		String redirect = "";
+		
+		
+		/* HttpSession session = request.getSession();
+		System.out.println("email:" + email);
+		System.out.println("Nome:" + nome);
+		System.out.println("telefone:" + telefone);
+		System.out.println("pagina:" + pagina);
+		*/
+		
+		if(pagina == "1"){
+			redirect ="/tela2.jsp";
+			
+		}else if (pagina =="2") {
+			redirect = "/tela3.jsp";
+		}
+		
+		System.out.println("pagina:" + pagina);
+		
+		//request.getRequestDispatcher(redirect).forward(request, response);
+		
+		
+		
+		
+	}
+
+}
