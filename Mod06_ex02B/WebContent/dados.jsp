@@ -8,7 +8,11 @@
 </head>
 <body>
 
+<br><br><br><br><br><br><br><br>
+<center>
 <H1>Dados Cadastrados</H1>
+
+
 
 <%-- O JSP usa o objeto implítico session para ler os atributos colocados anteriormente --%>
 <table>
@@ -25,6 +29,8 @@
 		<td><%=session.getAttribute("telefone")%></td>
 	</tr>
 </table>
+
+</center>
 
 </body>
 </html>
