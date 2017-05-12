@@ -25,6 +25,8 @@ public class SalvarServlet extends HttpServlet {
 		 response.addCookie(cookie);
 		 response.addCookie(cook);
 		 
+		 
+		 request.getRequestDispatcher("/sucesso.jsp").forward(request, response);
 	}
 
 }
