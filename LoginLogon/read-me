@@ -1,0 +1,14 @@
+Este projeto tem o objetivo encerrar um ciclo de estudos antes de começar um novo.
+Por isso estou implementando neles os seguinte processos:
+
+Usuario não cadastrado
+  * Preenche formulario (nome, email, telefone)
+  * No final, após conferir os dados é redirecionado para a tela de login.
+Usuario já cadastrado
+  * redirecionado diretamente para a sessão do usuario.
+  
+  
+ Técnicas exercitadas:
+ Escopo da request
+ Cookies
+ HttpSession
