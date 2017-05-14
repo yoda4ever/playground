@@ -16,8 +16,8 @@
 </div>
 
 	<div class="loginPanel">
-		<form action="loginLogon" method="get">
-			Already a user: <br> 
+		<form action="Login" method="get">
+			Already a user ? <br> 
 			<input type="text" name="user"  placeholder="Nome"><br><br>
 			<input type="text" name="password"  placeholder="Password"><br><br>
 			<input type="submit" value="Login">
