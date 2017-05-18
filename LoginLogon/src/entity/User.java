@@ -37,46 +37,71 @@ public class User {
 		return password;
 	}
 	
+
+	
 	
 	public static Map<String, String> getUserNameAndPassword(){
 		
-	 Map<String, String> map = new TreeMap<String, String>();
-	 
-	 Enumeration<Object> e = userInfo.keys();
-	 
-	 while(e.hasMoreElements()){
-		 String nome =(String) e.nextElement();
-		 String pw  = userInfo.getProperty(nome);
-		 map.put(nome, pw);
-	 }
+		 Map<String, String> props = new TreeMap<String, String>();
+		 
+		 Enumeration<Object> e = userInfo.keys();
+		 while(e.hasMoreElements()){
+			 String nome = (String) e.nextElement();
+			 String pw   = userInfo.getProperty(nome);
+			 props.put(nome, pw);
+		 }
+		  
+			return props;
+		}
 	
-		return map;
-	}
 	
 	
-	public static boolean validate(String nome, String pssw){
+	public static boolean validaUser(){
 		
-		boolean user = false;
-		boolean pw = false;
-		boolean retorno = false;
-		
-		Enumeration<Object> e = userInfo.keys();
-		
-		while(e.hasMoreElements()){
-			if(nome.equals(e.hasMoreElements())){
-				user = true;
-			   System.out.println("Para o nome vc digitou: "+ nome);
-			}if(pssw.equals(userInfo.getProperty(nome))){
-				pw = true;
-				System.out.println("Para a senha vc digitou: "+ pssw);
-			}if(user & pw == true){
-				retorno = true;
-			}
+		Map<String, String> props = User.getUserNameAndPassword();
+		String nome ="";
+		String pw = "";
+			
+		for(Map.Entry<String, String> map : props.entrySet()){
+			
+			nome = (String)  map.getKey();
+			pw =   (String)  map.getValue();
 		}
 		
+		System.out.println("Nome Correto do Usuario: "+ nome);
+		System.out.println("Senha Correta do Usuario: "+ pw);
 		
-		return retorno;
+		
+		return true;
 	}
+	
+	
+	
+	
+	
+//	public static boolean validate(String nome, String pssw){
+//		
+//		boolean user = false;
+//		boolean pw = false;
+//		boolean retorno = false;
+//		
+//		Enumeration<Object> e = userInfo.keys();
+//		
+//		while(e.hasMoreElements()){
+//			if(nome.equals(e.hasMoreElements())){
+//				user = true;
+//			   System.out.println("Para o nome vc digitou: "+ nome);
+//			}if(pssw.equals(userInfo.getProperty(nome))){
+//				pw = true;
+//				System.out.println("Para a senha vc digitou: "+ pssw);
+//			}if(user & pw == true){
+//				retorno = true;
+//			}
+//		}
+//		
+//		
+//		return retorno;
+//	}
 	
 	
 	

@@ -1,6 +1,8 @@
 package servlet;
 
 import java.io.IOException;
+import java.util.Map;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -18,15 +20,19 @@ public class LoginServet extends HttpServlet {
 		String user      = request.getParameter("user");
 		String password  = request.getParameter("password");
 		
-		boolean login = User.validate(user, password);
+		//System.out.println("Voce digitou: "+ user +" - " + password);
 		
-		System.out.println(User.getUserNameAndPassword());
+		User.validaUser();
 		
 		
 		
-		System.out.println("Voce esta logado: "+ login);
-		System.out.println("user"+ user);
-		System.out.println("password"+ password);
+		
+		
+		
 		 
+		
+		 
+		
+	 
 	}
 }
