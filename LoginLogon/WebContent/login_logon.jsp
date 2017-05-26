@@ -30,7 +30,7 @@
 	<h2>Not a member yet?</h2>
 	<h3>Join for free</h3>
 		 <p>
-		 	<a href="Cadastrar">Create your account</a>
+		 	<a href="tela1.jsp">Create your account</a>
 		 </p>
 		 
 	</div>

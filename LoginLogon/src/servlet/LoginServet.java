@@ -17,22 +17,17 @@ public class LoginServet extends HttpServlet {
 	 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		String user      = request.getParameter("user");
-		String password  = request.getParameter("password");
+//		String user      = request.getParameter("user");
+//		String password  = request.getParameter("password");
 		
 		//System.out.println("Voce digitou: "+ user +" - " + password);
 		
-		User.validaUser();
+		//request.setAttribute("props" , User.getUserNameAndPassword());
+		
+		//request.getRequestDispatcher("/test.jsp").forward(request, response);
 		
 		
-		
-		
-		
-		
-		 
-		
-		 
-		
+		response.sendRedirect("/webapps/test.jsp");
 	 
 	}
 }

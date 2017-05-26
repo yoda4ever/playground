@@ -8,6 +8,15 @@
 <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/styles/style.css" />
 </head>
 <body>
+
+<%
+
+		String nome     = (String) session.getAttribute("nome");
+		String email    = (String) session.getAttribute("email");
+		String telefone = (String) session.getAttribute("telefone");
+		
+%>
+
 	
 	<div class="header">
 		<h1>Check out my personal sandbox</h1>
@@ -17,17 +26,17 @@
 		 <table>
 		 	<tr>
 		 		<td>Nome:</td>
-		 		<td>O nome que eu digitei</td>
+		 		<td><%=nome %></td>
 		 	</tr>
 		 	
 		 	<tr>
 		 		<td>Email:</td>
-		 		<td>O email que eu digitei</td>
+		 		<td><%=email %></td>
 		 	</tr>
 		 	
 		 	<tr>
 		 		<td>Telefone:</td>
-		 		<td>O telefone que eu digitei</td>
+		 		<td><%=telefone %></td>
 		 	</tr>
 		 	
 		 </table>
